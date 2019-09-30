@@ -23,3 +23,10 @@ function addTask(e){
 const appendNewTask = task => {
   document.getElementById("tasks").appendChild(task);
 };
+
+function onDeleteClick(e) {
+  const deleteButton = e.currentTarget;
+  const listItem = deleteButton.parentElement;
+  const list = listItem.parentElement;
+  list.removeChild(listItem);
+}
