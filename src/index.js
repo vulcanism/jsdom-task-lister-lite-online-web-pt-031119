@@ -19,7 +19,6 @@ function addTask(e){
   console.log(e.target)
 }
 
-
 const appendNewTask = task => {
   document.getElementById("tasks").appendChild(task);
 };
